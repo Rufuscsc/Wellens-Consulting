@@ -1,6 +1,6 @@
 "use client";
-
 import { motion } from "framer-motion";
+
 const pricingTiers = [
   {
     title: "Free",
@@ -87,7 +87,7 @@ export const Price = () => {
                 key={index}
                 className="relative group p-10 border border-gray-300 bg-transparent rounded-3xl shadow-[0_7px_14px_rgba(0,0,0,0.05)] max-w-xs w-full cursor-pointer hover:shadow-xl transition-all duration-300"
               >
-                <div className="absolute bottom-0 left-0 w-full h-0 duration-300 z-2 bg-amber-500/30 rounded-3xl group-hover:h-full" />
+                <div className="absolute bottom-0 left-0 w-full h-0 duration-500 z-2 bg-amber-500/30 rounded-3xl group-hover:h-full" />
                 <div className="flex justify-between items-center ">
                   <h3 className="text-lg font-bold text-black/50 z-10">
                     {title}
@@ -100,7 +100,7 @@ export const Price = () => {
                     </div>
                   )}
                 </div>
-                
+
                 <div className="flex items-baseline gap-1 mt-8">
                   <span className="text-4xl font-bold tracking-tighter leading-none text-black">
                     ${monthlyPrice}
@@ -116,7 +116,10 @@ export const Price = () => {
 
                 <ul className="flex flex-col gap-5 mt-8">
                   {features.map((feature, idx) => (
-                    <li key={idx} className="text-sm flex items-center gap-4 text-gray-600">
+                    <li
+                      key={idx}
+                      className="text-sm flex items-center gap-4 text-gray-600"
+                    >
                       <span className="h-5 w-5 border border-gray-300 rounded-full flex items-center justify-center text-[10px] text-black">
                         ✓
                       </span>
@@ -125,7 +128,7 @@ export const Price = () => {
                   ))}
                 </ul>
               </motion.div>
-            )
+            ),
           )}
         </motion.div>
       </div>

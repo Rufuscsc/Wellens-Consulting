@@ -17,8 +17,8 @@ export function About() {
 
         <div className="flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-30">
           <motion.div
-            initial={{ opacity: 0, x: -30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ y: -30, opacity:0 }}
+            whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
             className="flex flex-col items-center md:items-start"
           >
@@ -50,12 +50,12 @@ export function About() {
           </motion.div>
 
           <motion.div
-            initial={{ opacity: 0, x: 30 }}
-            whileInView={{ opacity: 1, x: 0 }}
+            initial={{ opacity: 0, y: -30 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8, delay: 0.4 }}
             className="max-w-3xl"
           >
-            <div className="space-y-4 text-xl text-gray-800 leading-relaxed font-medium tracking-tight">
+            <div className="space-y-4 text-xl text-gray-800 text-justify leading-relaxed font-medium tracking-tight">
               <p>
                 I’m a strategic leader and CEO with over a decade of experience
                 helping organizations transform vision into scalable reality.
