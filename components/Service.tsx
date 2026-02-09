@@ -33,7 +33,7 @@ const Service = () => {
   return (
     <section className="py-16">
       <div className="container mx-auto px-4">
-        <h2 className="text-4xl md:text-5xl tracking-tighter font-bold text-black text-center">
+        <h2 className="text-4xl md:text-5xl tracking-tighter font-medium text-black text-center">
           Services we Provide
         </h2>
         <p className="text-[22px] leading-relaxed tracking-tight text-gray-600 mt-5 text-center mb-16">
