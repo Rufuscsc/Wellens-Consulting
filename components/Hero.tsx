@@ -34,7 +34,7 @@ export default function Hero() {
             whileInView={{ y: 0, opacity: 1 }}
             transition={{ duration: 0.6, delay: 0.7 }}
           >
-            <button className="px-8 py-4 bg-amber-600 text-white rounded-full text-sm font-bold transition-all hover:bg-amber-700 hover:shadow-xl duration-300 active:scale-95 uppercase tracking-wide">
+            <button className="px-8 py-4 cursor-pointer bg-amber-600 text-white rounded-full text-sm font-medium transition-all hover:bg-amber-700 hover:shadow-xl duration-300 active:scale-95 uppercase tracking-wide">
               Explore Solutions
             </button>
           </motion.div>
@@ -43,7 +43,7 @@ export default function Hero() {
           <motion.div
             initial={{ scale: 0 }}
             whileInView={{ scale: 1 }}
-            transition={{ duration: 0.8, type: "spring", stiffness: 100 }}
+            transition={{ duration: 1, type: "spring", stiffness: 100 }}
             className="relative w-full h-full rounded-full overflow-hidden border-8 border-gray-100"
           >
             <Image

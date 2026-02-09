@@ -52,9 +52,8 @@ const pricingTiers = [
 
 export const Service = () => {
   return (
-    <section className="py-24 bg-white">
+    <section className="py-10 bg-white">
       <div className="container mx-auto px-4 mt-40 ">
-        {/* Section Heading */}
         <div className="max-w-135 mx-auto text-center">
           <motion.h2
             initial={{ opacity: 0 }}
@@ -75,12 +74,11 @@ export const Service = () => {
           </motion.p>
         </div>
 
-        {/* Pricing Cards */}
         <motion.div
           initial={{ opacity: 0 }}
           whileInView={{ opacity: 1 }}
           transition={{ delay: 0.8, duration: 0.8 }}
-          className="flex flex-col gap-15 items-center mt-12 lg:flex-row lg:items-stretch lg:justify-center"
+          className="flex flex-col gap-20 items-center mt-12 lg:flex-row lg:items-stretch lg:justify-center"
         >
           {pricingTiers.map(
             ({ title, monthlyPrice, buttonText, popular, features }, index) => (
