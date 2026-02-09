@@ -46,7 +46,7 @@ const Service = () => {
             <motion.div
             whileHover={{ scale: 1.05 }}
               key={index}
-              className="bg-white p-10 rounded-3xl border border-gray-300 flex flex-col items-center text-justify shadow-[0_7px_14px_rgba(0,0,0,0.05)] cursor-pointer hover:shadow-xl transition-all duration-300"
+              className="bg-white p-9 rounded-3xl border border-gray-300 flex flex-col items-center text-center shadow-[0_7px_14px_rgba(0,0,0,0.05)] cursor-pointer hover:shadow-xl transition-all duration-300"
             >
               <div className="relative w-40 h-40 mb-6">
                 <Image
