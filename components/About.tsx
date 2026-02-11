@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <section className="py-60 bg-white overflow-hidden">
+    <section className="py-30 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         <motion.h1
           initial={{ opacity: 0 }}

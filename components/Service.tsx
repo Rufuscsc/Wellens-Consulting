@@ -31,7 +31,7 @@ const serviceCard = [
 
 const Service = () => {
   return (
-    <section className="py-16">
+    <section className="py-60">
       <div className="container mx-auto px-4">
         <h2 className="text-4xl md:text-5xl tracking-tighter font-medium text-black text-center">
           Services we Provide

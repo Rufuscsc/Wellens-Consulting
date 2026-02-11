@@ -11,9 +11,9 @@ export default function Home() {
     <>
     <Navbar />
     <Hero />
-    <Price />
-    <About />
     <Service />
+    <About />
+    <Price />
     </>
   );
 }
