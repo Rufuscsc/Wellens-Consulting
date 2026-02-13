@@ -2,6 +2,8 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
+
+
 export default function Hero() {
   return (
     <section className="min-h-screen flex items-center bg-white">
