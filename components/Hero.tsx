@@ -9,7 +9,7 @@ export default function Hero() {
       <div className="absolute top-0 right-0 w-125 h-125  rounded-full -mr-40 -mt-40" />
       <div className="absolute bottom-0 left-0 w-100 h-100  rounded-full -ml-20 -mb-20" />
 
-      <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col md:flex-row items-center gap-12 lg:gap-20 relative z-10">
+      <div className="container mx-auto px-6 md:px-12 lg:px-20 flex flex-col-reverse md:flex-row items-center gap-12 lg:gap-20 relative z-10">
         {/* Left Content */}
         <div className="w-full md:w-1/2 flex flex-col gap-8">
           <motion.div
