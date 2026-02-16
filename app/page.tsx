@@ -1,4 +1,6 @@
 import { About } from "@/components/About";
+import Contact from "@/components/Contact";
+import Footer from "@/components/footer";
 import Hero from "@/components/Hero";
 import Navbar from "@/components/Navbar";
 import { Price } from "@/components/Price";
@@ -16,6 +18,8 @@ export default function Home() {
     <About />
     <Price />
     <Testimony />
+    <Contact isDarkMode={false} />
+    <Footer/>
     </>
   );
 }
