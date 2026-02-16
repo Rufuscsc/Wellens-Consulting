@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <section className="py-32 bg-linear-to-b from-white to-gray-50 overflow-hidden">
+    <section className="py-32 bg-white overflow-hidden">
       <div className="container mx-auto px-6">
         {/* Section Heading */}
         <motion.div
