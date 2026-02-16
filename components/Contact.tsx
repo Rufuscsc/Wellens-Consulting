@@ -64,7 +64,7 @@ const Contact = ({ isDarkMode }: { isDarkMode: boolean }) => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.3 }}
-        className="text-center mb-2 text-lg font-Ovo"
+        className="text-center mb-2 text-lg font-Ovo text-slate-500"
       >
         Connect with me
       </motion.h4>
@@ -73,7 +73,7 @@ const Contact = ({ isDarkMode }: { isDarkMode: boolean }) => {
         initial={{ opacity: 0, y: -20 }}
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5, delay: 0.5 }}
-        className="text-center text-5xl font-Ovo"
+        className="text-center text-5xl font-Ovo font-bold"
       >
         Get in touch
       </motion.h2>
@@ -82,7 +82,7 @@ const Contact = ({ isDarkMode }: { isDarkMode: boolean }) => {
         initial={{ opacity: 0 }}
         whileInView={{ opacity: 1 }}
         transition={{ duration: 0.5, delay: 0.7 }}
-        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo"
+        className="text-center max-w-2xl mx-auto mt-5 mb-12 font-Ovo text-slate-500"
       >
         I'd love to hear from you! If you have any questions, comments, or
         feedback, please use the form below.
@@ -150,7 +150,7 @@ const Contact = ({ isDarkMode }: { isDarkMode: boolean }) => {
           } ${isSubmitting ? "opacity-60 cursor-not-allowed" : ""}`}
         >
           {isSubmitting ? "Sending..." : "Submit now"}
-          <Image src="/assets/right-arrow-white.png" alt="" className="" width="15" height="15"/>
+          <Image src="/assets/right-arrow-white.png" alt="" className="" width="10" height="15"/>
         </motion.button>
 
         <p className="text-center mt-4 font-Ovo">{result}</p>

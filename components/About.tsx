@@ -4,82 +4,88 @@ import { motion } from "framer-motion";
 
 export function About() {
   return (
-    <section className="py-30 bg-white overflow-hidden">
-      <div className="container mx-auto px-4">
-        <motion.h1
-          initial={{ opacity: 0 }}
-          whileInView={{ opacity: 1 }}
-          transition={{ duration: 1 }}
-          className="text-5xl tracking-tighter md:text-6xl md:leading-[1.1] font-medium text-black text-center mb-16"
+    <section className="py-32 bg-linear-to-b from-white to-gray-50 overflow-hidden">
+      <div className="container mx-auto px-6">
+        {/* Section Heading */}
+        <motion.div
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.8 }}
+          viewport={{ once: true }}
+          className="text-center mb-20"
         >
-          About the CEO
-        </motion.h1>
+          <h1 className="text-4xl md:text-6xl font-semibold tracking-tight text-black">
+            About the CEO
+          </h1>
+          <div className="mt-6 flex justify-center">
+            <div className="h-1 w-24 bg-black rounded-full" />
+          </div>
+        </motion.div>
 
-        <div className="flex flex-col md:flex-row items-center justify-center gap-10 lg:gap-30">
+        {/* Content */}
+        <div className="flex flex-col lg:flex-row items-center gap-16 lg:gap-24">
+          {/* Image Section */}
           <motion.div
-            initial={{ y: -30, opacity:0 }}
-            whileInView={{ y: 0, opacity: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="flex flex-col items-center md:items-start"
+            initial={{ opacity: 0, x: -40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="flex flex-col items-center lg:items-start"
           >
-            <div className="mt-6 relative w-75 h-96 md:w-80 md:h-112.5 overflow-hidden rounded-2xl shadow-2xl border border-gray-100">
+            <div className="relative w-72 h-96 md:w-80 md:h-120 rounded-3xl overflow-hidden shadow-[0_20px_60px_rgba(0,0,0,0.15)]">
               <Image
                 src="/assets/rufus.jpg"
-                alt="CEO of Wellens Consulting"
+                alt="Wellens Rufus - Founder & CEO"
                 fill
                 priority
                 quality={100}
                 className="object-cover"
-                sizes="(max-width: 768px) 576px, 640px"
               />
             </div>
-            <div className="mt-6 text-center md:text-left">
-              <p className="font-bold text-xl text-black tracking-tight">
+
+            <div className="mt-8 text-center lg:text-left">
+              <h3 className="text-2xl font-semibold text-gray-900 tracking-tight">
                 Wellens Rufus
-              </p>
-              <motion.div
-                initial={{ width: 0 }}
-                whileInView={{ width: 64 }}
-                transition={{ duration: 1, delay: 0.8 }}
-                className="mb-2 h-1 bg-black rounded-full"
-              />
-              <p className="text-gray-500 font-medium text-sm uppercase tracking-widest">
-                Founder & CEO
+              </h3>
+              <p className="mt-2 text-sm uppercase tracking-[0.2em] text-gray-500">
+                Founder & Chief Executive Officer
               </p>
             </div>
           </motion.div>
 
+          {/* Text Section */}
           <motion.div
-            initial={{ opacity: 0, y: -30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8, delay: 0.4 }}
-            className="max-w-3xl"
+            initial={{ opacity: 0, x: 40 }}
+            whileInView={{ opacity: 1, x: 0 }}
+            transition={{ duration: 0.8 }}
+            viewport={{ once: true }}
+            className="max-w-2xl"
           >
-            <div className="space-y-4 text-xl text-gray-800 text-justify leading-relaxed font-medium tracking-tight">
+            <div className="space-y-6 text-lg md:text-xl text-gray-700 leading-relaxed text-justify">
               <p>
-                I’m a strategic leader and CEO with over a decade of experience
-                helping organizations transform vision into scalable reality.
+                I am a strategic executive with over a decade of experience
+                transforming bold visions into scalable and sustainable
+                enterprises. My leadership philosophy is rooted in clarity,
+                structure, and long-term growth.
               </p>
+
               <p>
-                I’ve spent my career navigating complex business ecosystems,
-                using data-driven insights and modern frameworks to turn
-                stagnant operations into high-performance ventures. I’m a
-                stickler for structural integrity and sustainable growth.
+                Throughout my career, I have navigated complex business
+                ecosystems, applying data-driven insights and modern strategic
+                frameworks to convert stagnant operations into
+                high-performance ventures.
               </p>
+
               <p>
-                For me, consulting isn’t just about offering advice; it’s about
-                the tangible impact on the bottom line. I believe the best
-                leadership is found in clear communication, agile
-                decision-making, and the intuitive strategy that allows my
-                clients to focus on the growth they envisioned.
+                To me, consulting is not about theory, it is about measurable
+                results. I prioritize agile decision-making, operational
+                precision, and strategies that directly impact the bottom line.
               </p>
+
               <p>
-                Beyond the numbers, I am a champion for human-centric
-                leadership. I know that at the heart of every high-performance
-                venture is a team that feels empowered and a vision that feels
-                attainable. At Wellens Consulting, we don’t just deliver
-                reports we deliver the clarity and confidence required to lead
-                in an ever-changing world.
+                Beyond performance metrics, I champion human-centered
+                leadership. I believe empowered teams and clear direction are
+                the true engines of sustainable success.
               </p>
             </div>
           </motion.div>
